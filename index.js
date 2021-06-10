@@ -36,8 +36,8 @@ app.get('/location', (req, res) => {
     })
 })
 
-app.post('/logout', (req, res) => {
-    currentUser = ""
+app.get('/logout', (req, res) => {
+    res.render('index', {logout: true})
 })
 
 
